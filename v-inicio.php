@@ -1,3 +1,4 @@
+
 <select name="menu">
   <option>Español</option>
   <option value="2">Tucano</option>
@@ -11,6 +12,16 @@
 
 <br><br><br>
 
-<textarea name="texto" rows="4" cols="20">palabra a traducir</textarea>
 
-<textarea name="texto" rows="4" cols="20">Traducción </textarea>
+<div class="form-group shadow-textarea">
+  <label for="exampleFormControlTextarea6"></label>
+  <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Digite palabra"></textarea>
+</div>
+<div class="form-group shadow-textarea">
+  <label for="exampleFormControlTextarea6"></label>
+  <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Resultado"></textarea>
+</div>
+
+<!-- <textarea name="texto" rows="4" cols="20">palabra a traducir</textarea>
+
+<textarea name="texto" rows="4" cols="20" placeholder="digite palabra">Traducción </textarea>  -->
