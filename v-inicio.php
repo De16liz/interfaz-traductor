@@ -13,15 +13,16 @@
 <br><br><br>
 
 
-<div class="form-group shadow-textarea">
-  <label for="exampleFormControlTextarea6"></label>
-  <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Digite palabra"></textarea>
-</div>
-<div class="form-group shadow-textarea">
-  <label for="exampleFormControlTextarea6"></label>
-  <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Resultado"></textarea>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-3">
+      <div class="form-group two-fields">
+        
+        <div class="input-group">
+        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="digite palabra"></textarea>          
+        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3" placeholder="Resultado"></textarea>        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- <textarea name="texto" rows="4" cols="20">palabra a traducir</textarea>
-
-<textarea name="texto" rows="4" cols="20" placeholder="digite palabra">Traducción </textarea>  -->
