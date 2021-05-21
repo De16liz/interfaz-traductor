@@ -1,8 +1,6 @@
-body
+
+
+body 
 {
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(210, 231, 231, 0.979);
-    
-
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
