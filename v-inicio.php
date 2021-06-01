@@ -13,7 +13,7 @@
 <br><br><br>
 
 
-<div class="container">
+<!--<div class="container">
   <div class="row">
     <div class="col-xs-12 col-md-3">
       <div class="form-group two-fields">
@@ -24,5 +24,10 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
 
+<form action="c-llamado.php" method="POST">
+    Inserte palabra<input type="text" name="palabra">
+    <br>
+    <input type="submit" value="Traducir">
+</form>

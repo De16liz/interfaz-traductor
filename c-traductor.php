@@ -2,4 +2,4 @@
 
     $seccion = "v-inicio.php";
 
-    include( "vista-traductor.php" );
+    include( "v-plantilla.php" );
