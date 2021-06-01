@@ -9,7 +9,7 @@
         
             $conexion = self::conectar( );
 
-            $sql = "SELECT * FROM tb_palabras t1
+            $sql = "SELECT t1.palabra FROM tb_palabras t1
             INNER JOIN tb_palabras_idiomas t2 ON t2.id_palabra = t1.id_palabra
             INNER JOIN tb_idiomas t3 ON t3.id_idioma = t2.id_idioma
             WHERE t1.id_palabra IN 
