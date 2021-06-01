@@ -26,7 +26,7 @@
 
     <?php
 
-        $conexion = mysqli_connect( "localhost", "root", "", "bd_traductor_adsi" );
+        $conexion = mysqli_connect( "localhost", "root", "", "traductor3_3" );
         $sql = "SELECT * FROM tb_palabras";
         //echo $sql;
         $resultado = $conexion->query( $sql );
