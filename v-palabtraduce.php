@@ -1,26 +1,31 @@
 
-<form action="prueba.php" method="POST">
+<form action="prueba.php" method="POST"><!-- Apertura del formulario -->
 
-    <select name="v1">
+    <select name="v1"><!-- lista -->
 
     <?php
 
+        //Inicia la conexion
         $conexion = mysqli_connect( "localhost", "root", "", "traductor3_3" );
+        
+        //construcción de la consulta
         $sql  = " SELECT palabra_1, palabra ";
         $sql .= " FROM tb_traduccion t1, tb_palabras t2 ";
         $sql .= " WHERE t1.id_palabra = t2.id_palabra ";
         //echo $sql;
         $resultado = $conexion->query( $sql );
 
+        //recorre los datos que arroja la consulta
         while( $fila = mysqli_fetch_assoc( $resultado ) )
         {
-            $palabra_1 = $fila[ 'palabra_1' ];
-            $palabra = $fila[ 'palabra' ];
+            $palabra_1 = $fila[ 'palabra_1' ];//captura columna
+            $palabra = $fila[ 'palabra' ];//captura columna
+            //imprime items de la lista
             echo "<option value='$palabra_1'>$palabra</option>";
         }
     ?>
 
-    </select>
+    </select><!--  termina lista -->
     
     <select name="v4">
 
@@ -42,6 +47,6 @@
     </select>
     <br>
 
-    <input type="submit" value="Guardar">
+    <input type="submit" value="Guardar"><!-- Boton -->
 
-</form>
+</form><!--cierra formulario -->

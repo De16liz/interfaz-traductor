@@ -1,3 +1,4 @@
+<!--menu con bootstrap-->
 
 <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">

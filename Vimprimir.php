@@ -26,12 +26,17 @@
                     $salida .= $fila[ $i ];
                     if( $des == null ) $salida .= "</td>";
 
-                    if( $i + 1 == mysqli_num_fields( $resultado ) )
-                    {
-                        if( $des == null ) $salida .= "<td><a href='#'></a></td>";
-                        if( $des == null ) $salida .= "<td><a href='c-cita-borrar.php?id=$id'></a></td>";
-                    }
+                    // if( $i + 1 == mysqli_num_fields( $resultado ) )
+                    // {
+                    //     if( $des == null ) $salida .= "<td><a href='#'></a></td>";
+                    //     if( $des == null ) $salida .= "<td><a href='c-cita-borrar.php?id=$id'></a></td>";
+                    // }
                 }
+
+                //$salida .= "<td><a href='#'></a></td>";
+                //$salida .= "<td><a href='c-cita-borrar.php?id=$id'></a></td>";
+
+
 
                 if( $des == null ) $salida .= "</tr>";
             }            

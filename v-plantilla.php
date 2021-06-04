@@ -5,7 +5,7 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
         
-        <title>Título del sitio.</title>
+        <title>Traductor Native</title>
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
 

@@ -1,5 +1,8 @@
 <?php
 
+    //sección de vistas
     $seccion = "v-inicio.php";
 
-    include( "v-plantilla.php" );
+    include( "configuraciones.php" );
+
+    
