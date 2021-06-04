@@ -9,5 +9,6 @@
 
     //echo $r;
 
+    //seccion de vistas
     $seccion = "v-llamado.php";
     include( "v-plantilla.php" );

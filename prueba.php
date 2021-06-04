@@ -1,5 +1,7 @@
 <?php
 
+
+    //archivo de pruebas
     $a = $_POST[ 'v1' ];
     //$b = $_POST[ 'v2' ];
     //$c = $_POST[ 'v3' ];
@@ -13,6 +15,17 @@
     //echo $sql;
     $resultado = $conexion->query( $sql );
 
+
+    /*$ar['palabra_1'] = $_POST['v1'];
+    $ar['palabra_2'] = $_POST['v4'];
+    //$db = new BasedeDatos();
+
+    $db->insert('tb_traduccion',$ar);*/
+    
+
+
+
+
     //Esta línea verifica si la inserción funciono.
     if( mysqli_affected_rows( $conexion ) > 0 )
     {
@@ -21,3 +34,4 @@
     }else{
             echo "No se escrbieron tus datos";
         }
+        
