@@ -1,5 +1,6 @@
 <?php
 
+    //incluye la conección de la BD
     include("conexion.php");
 
     class llamado extends conexion
@@ -9,25 +10,24 @@
         
             $conexion = self::conectar( );
 
-            $sql = "SELECT t1.palabra FROM tb_palabras t1
-            INNER JOIN tb_palabras_idiomas t2 ON t2.id_palabra = t1.id_palabra
-            INNER JOIN tb_idiomas t3 ON t3.id_idioma = t2.id_idioma
-            WHERE t1.id_palabra IN 
-            (
-                SELECT tb_traduccion.palabra_2 FROM tb_traduccion WHERE tb_traduccion.palabra_1 IN 
-                (
-                    SELECT t2.palabra_1 FROM tb_palabras t1
-                    INNER JOIN tb_traduccion t2 ON t2.palabra_2 = t1.id_palabra
-                    WHERE t1.palabra = '$palabra'
-                )
-            )";
+            
+            //construcción de la consulta
+            $sql = "SELECT palabra
+            FROM tb_traduccion t1, tb_palabras t2
+            WHERE palabra_1 = ( 
+                                    SELECT palabra_1
+                                    FROm tb_palabras t3, tb_traduccion t4
+                                    WHERE t4.id_palabra = t3.id_palabra
+                                    AND t3.palabra LIKE '$palabra'
+                            )
+            AND t1.id_palabra = t2.id_palabra;";
 
             //$sql = "SELECT DATABASE()";
 
             //$sql = "show TABLES";
             
             //echo $sql;
-            $resultado = $conexion->query($sql);
+            $resultado = $conexion->query($sql);//ejecuta la consulta
 
             return $resultado;
 
