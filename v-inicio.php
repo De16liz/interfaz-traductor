@@ -27,8 +27,9 @@
 </select><!--  termina lista -->
 
 <!--icono -->
+<button type="button" title="Cambiar orden de opciones" id="btn_change" style="width: auto; margin-right: 20px; margin-left: 20px;" class="btn btn-default btn-sm btn-circle"><span class="glyphicon glyphicon-transfer"></span>
 <img src="imagenes/iconos/icono_transferir.svg" style="height: 25px;" >
-
+</button>
 <select name="menu"><!-- lista -->
   
   <?php

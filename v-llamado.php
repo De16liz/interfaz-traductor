@@ -6,4 +6,5 @@
     <input type="submit" value="Traducir"><!-- Botón -->
 </form><!--  cierre del formulario -->
 
+
 <?php echo $r; ?>
